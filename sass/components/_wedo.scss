@@ -1,0 +1,46 @@
+.wedo__container {
+  @extend%content;
+}
+.wedo__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+.wedo__list {
+  @extend%list-style-reset;
+  margin-top: 50px;
+  display: flex;
+}
+.wedo__items {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.wedo__images {
+  @extend%image-fix;
+}
+.wedo__description {
+  position: absolute;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+}
