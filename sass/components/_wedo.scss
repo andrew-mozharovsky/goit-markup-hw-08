@@ -1,3 +1,9 @@
+.wedo {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
 .wedo__container {
   @extend%content;
 }
