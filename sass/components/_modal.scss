@@ -24,22 +24,27 @@
   @media screen and (max-width: 1200px) {
     margin-top: 93px;
   }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $time-line;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+
   position: relative;
   padding: 40px;
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-
-  // width: 528px;
-  // height: 581px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  // transform: translate(-50%, -50%) scale(1);
-  // transition: transform 250ms $time-line;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
@@ -139,6 +144,7 @@
 .modal__content-check {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row-reverse;
 
   margin-top: 20px;
@@ -148,17 +154,23 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
-  // font-size: 14px;
-  // line-height: 1.714;
+
   color: $secondary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 .modal__content-input-check {
   @extend%hidden;
 }
 .modal__content-link {
   margin-left: 1px;
-  // margin-left: 4px;
+
   color: $accent-color;
+  @media screen and (min-width: 1200px) {
+    margin-left: 4px;
+  }
 }
 .modal__content-castom-check {
   margin-right: 7px;

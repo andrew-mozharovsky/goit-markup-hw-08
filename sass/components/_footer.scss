@@ -5,7 +5,19 @@
   @extend%content;
   padding-top: 60px;
   padding-bottom: 60px;
-  //   display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-left: 76px;
+    padding-right: 89px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+
   //   //   justify-content: space-around;
 }
 .footer__address {
@@ -37,10 +49,15 @@
   }
 }
 .footer__join {
-  //   margin-left: 70px;
-  //   padding-top: 13px;
   @media screen and (max-width: 767px) {
     margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    padding-top: 13px;
   }
 }
 .footer__join-title {

@@ -1,6 +1,9 @@
 .hero {
   height: 400px;
   max-width: 1600px;
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
   // margin-left: auto;
   // margin-right: auto;
 
@@ -19,8 +22,10 @@
   height: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   max-width: 360px;
@@ -36,9 +41,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  // font-size: 44px;
-  // line-height: 1.4;
+  @media screen and (min-width: 1200px) {
+    max-width: 700px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 .hero__button {
   display: block;

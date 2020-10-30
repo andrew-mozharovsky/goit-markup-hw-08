@@ -8,8 +8,10 @@
   font-size: 26px;
   line-height: 1, 16;
   text-decoration: none;
-  &.logo--footer {
-    text-align: center;
+  @media screen and (max-width: 767px) {
+    &.logo--footer {
+      text-align: center;
+    }
   }
 }
 .logo__text {
