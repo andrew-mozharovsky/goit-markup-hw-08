@@ -2,17 +2,17 @@
   @extend%content;
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
 }
 .clients__title {
   margin-top: 0px;
   margin-bottom: 0;
+
   color: $primary-text-color;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.167;
@@ -22,9 +22,11 @@
   @extend%list-style-reset;
   display: flex;
   justify-content: center;
+
   @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
   }
+
   margin-top: 30px;
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
@@ -33,6 +35,7 @@
 
 .clients__item {
   height: 90px;
+
   @media screen and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
     &:nth-child(2n) {
@@ -62,8 +65,7 @@
 .clients__links {
   display: flex;
   height: 100%;
-  // width: 170px;
-  // height: 90px;
+
   justify-content: center;
   align-items: center;
 

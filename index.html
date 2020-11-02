@@ -108,30 +108,51 @@
           <h2 class="wedo__title">Чем мы занимаемся</h2>
         <ul class="wedo__list">
           <li class="wedo__items">
-            <img class="wedo__images"
-              src="./images/we-do/we-do1.jpg"
-              width="370"
-              height="294"
-              alt="разработка программного обеспечения"
-            />
+            <picture>
+              <source srcset="
+                ./images/we-do/we-do1-370.webp 1x,
+                ./images/we-do/we-do1-740.webp 2x
+                " type="image/webp">
+              
+              <img class="wedo__images"
+                srcset="
+                ./images/we-do/we-do1-370.jpg 1x,
+                ./images/we-do/we-do1-740.jpg 2x"          
+                src="./images/we-do/we-do1-370.jpg"
+                alt="разработка программного обеспечения"
+                width="370"
+                height="294"              
+              />    
+            </picture>
+                   
             <p class="wedo__description">Десктопные приложения</p>
           </li>
           <li class="wedo__items">
-            <img class="wedo__images"
-              src="./images/we-do/we-do2.jpg"
-              width="370"
-              height="294"
-              alt="разработка мобильных приложений"
-            />
+            <picture>
+              <source srcset="
+                ./images/we-do/we-do2-370.webp 1x,
+                ./images/we-do/we-do2-740.webp 2x
+                " type="image/webp">
+
+              <img class="wedo__images" srcset="
+                ./images/we-do/we-do2-370.jpg 1x,
+                ./images/we-do/we-do2-740.jpg 2x" 
+                src="./images/we-do/we-do2-370.jpg" width="370" height="294" alt="разработка мобильных приложений" />
+            </picture>
             <p class="wedo__description">Мобильные приложения</p>
           </li>
           <li class="wedo__items">
-            <img class="wedo__images"
-              src="./images/we-do/we-do3.jpg"
-              width="370"
-              height="294"
-              alt="разработка дизайна веб страниц"
-            />
+            <picture>
+              <source srcset="
+                              ./images/we-do/we-do3-370.webp 1x,
+                              ./images/we-do/we-do3-740.webp 2x
+                              " type="image/webp">
+
+              <img class="wedo__images" srcset="
+                ./images/we-do/we-do3-370.jpg 1x,
+                ./images/we-do/we-do3-740.jpg 2x
+                " src="./images/we-do/we-do3-370.jpg" width="370" height="294" alt="разработка дизайна веб страниц" />
+            </picture>
             <p class="wedo__description">Дизайнерские решения</p>
           </li>
         </ul>
@@ -143,12 +164,19 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__items">
-            <img class="team__items-images"
-              src="./images/comand/productdesigner.jpg"
-              width="270"
-              height="260"
-              alt="Игорь Демьяненко"
-            />
+            <picture>
+              <source srcset="
+                              ./images/comand/productdesigner-270.webp 1x,
+                              ./images/comand/productdesigner-540.webp 2x
+                              " type="image/webp">
+              <img class="team__items-images" 
+              srcset="./images/comand/productdesigner-270.jpg 1x,
+              ./images/comand/productdesigner-540.jpg 2x" 
+              src="./images/comand/productdesigner-270.jpg"
+                width="270" 
+                height="260" 
+                alt="Игорь Демьяненко" />
+            </picture>
             <h3 class="team__name">Игорь Демьяненко</h3>
             <p class="team__position">Product Designer</p>
             <ul class="team__networks">
@@ -175,12 +203,15 @@
             </ul>
           </li>
           <li class="team__items">
-            <img class="team__items-images"
-              src="./images/comand/frontenddeveloper.jpg"
-              width="270"
-              height="260"
-              alt="Ольга Репина"
-            />
+            <picture>
+              <source srcset="
+                                            ./images/comand/frontenddeveloper-270.webp 1x,
+                                            ./images/comand/frontenddeveloper-540.webp 2x
+                                            " type="image/webp">
+              <img class="team__items-images" srcset="./images/comand/frontenddeveloper-270.jpg 1x,
+                          ./images/comand/frontenddeveloper-540.jpg 2x
+                          " src="./images/comand/frontenddeveloper-270.jpg" width="270" height="260" alt="Ольга Репина" />
+            </picture>
             <h3 class="team__name">Ольга Репина</h3>
             <p class="team__position">Frontend Developer</p>
             <ul class="team__networks">
@@ -211,12 +242,15 @@
             </ul>
           </li>
           <li class="team__items">
-            <img class="team__items-images"
-              src="./images/comand/marketing.jpg"
-              width="270"
-              height="260"
-              alt="Николай Тарасов"
-            />
+            <picture>
+              <source srcset="
+                                             ./images/comand/marketing-270.webp 1x,
+                                             ./images/comand/marketing-540.webp 2x
+                                               " type="image/webp">
+              <img class="team__items-images" srcset="./images/comand/marketing-270.jpg 1x,
+                          ./images/comand/marketing-540.jpg 2x
+                          " src="./images/comand/marketing-270.jpg" width="270" height="260" alt="Николай Тарасов" />
+            </picture>
             <h3 class="team__name">Николай Тарасов</h3>
             <p class="team__position">Marketing</p>
             <ul class="team__networks">
@@ -247,12 +281,15 @@
             </ul>
           </li>
           <li class="team__items">
-            <img class="team__items-images"
-              src="./images/comand/ui-designer.jpg"
-              width="270"
-              height="260"
-              alt="Михаил Ермаков"
-            />
+            <picture>
+              <source srcset="
+                        ./images/comand/ui-designer-270.webp 1x,
+                        ./images/comand/ui-designer-540.webp 2x
+                         " type="image/webp">
+              <img class="team__items-images" srcset="./images/comand/ui-designer-270.jpg 1x,
+                          ./images/comand/ui-designer-540.jpg 2x
+                          " src="./images/comand/ui-designer-270.jpg" width="270" height="260" alt="Михаил Ермаков" />
+            </picture>
             <h3 class="team__name">Михаил Ермаков</h3>
             <p class="team__position">UI Designer</p>
             <ul class="team__networks">

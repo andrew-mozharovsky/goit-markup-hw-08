@@ -24,6 +24,9 @@
   display: flex;
 }
 .wedo__items {
+  width: calc((100% - 60px) / 3);
+  height: auto;
+
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
@@ -31,6 +34,7 @@
 }
 .wedo__images {
   @extend%image-fix;
+  width: 100%;
 }
 .wedo__description {
   position: absolute;

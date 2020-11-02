@@ -1,22 +1,54 @@
 .hero {
   height: 400px;
-  max-width: 1600px;
+  max-width: 580px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 1200px) {
-    height: 600px;
-  }
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bg-Image.jpg);
+
   background-color: #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-Image-480.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/bg-Image-480@x2.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 880px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-Image-768.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/bg-Image-768@x2.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/bg-Image-1200.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/bg-Image-1200@x2.jpg);
+    }
+  }
 }
 .hero__container {
   @extend%content;
